@@ -1,0 +1,54 @@
+package application;
+	
+import javafx.application.Application;
+import javafx.geometry.Orientation;
+import javafx.scene.Group;
+import javafx.scene.Scene;
+import javafx.scene.chart.BarChart;
+import javafx.scene.chart.CategoryAxis;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.XYChart;
+import javafx.scene.control.Label;
+import javafx.scene.layout.FlowPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Font;
+import javafx.stage.Stage;
+
+public class Main extends Application {
+	@Override
+	public void start(Stage primaryStage) {
+		Rectangle Project = new Rectangle(100, 20 * 3, Color.RED);
+		Label ProjectLabel = new Label("Project --"+(Project.getHeight()/3)+"%");
+		ProjectLabel.setFont(new Font(12));
+		
+		Rectangle Quiz = new Rectangle(100, 10 * 3, Color.BLUE);
+		Label QuizLabel = new Label("Quiz --"+(Quiz.getHeight()/3)+"%");
+		QuizLabel.setFont(new Font(12));
+		
+		Rectangle Midterm = new Rectangle(100, 30 * 3, Color.GREEN);
+		Label MidtermLabel = new Label("Midterm --"+(Midterm.getHeight()/3)+"%");
+		MidtermLabel.setFont(new Font(12));
+		
+		Rectangle Final = new Rectangle(100, 40 * 3, Color.YELLOW);
+		Label FinalLabel = new Label("Final --"+(Quiz.getHeight()/3)+"%");
+		FinalLabel.setFont(new Font(12));
+		
+		FlowPane projectPane = new FlowPane(ProjectLabel , Project);
+		projectPane.setOrientation(Orientation.VERTICAL);
+		FlowPane quizPane = new FlowPane(QuizLabel , Quiz);
+		quizPane.setOrientation(Orientation.VERTICAL);
+		FlowPane midtermPane = new FlowPane(MidtermLabel , Midterm);
+		midtermPane.setOrientation(Orientation.VERTICAL);
+		FlowPane finalPane = new FlowPane(FinalLabel , Final);
+		finalPane.setOrientation(Orientation.VERTICAL);
+
+	}
+	
+	public static void main(String[] args) {
+		launch(args);
+	}
+}

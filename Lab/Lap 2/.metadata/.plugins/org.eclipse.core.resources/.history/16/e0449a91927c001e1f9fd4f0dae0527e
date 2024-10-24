@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class Activity1 {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> s = new ArrayList<Integer>();
+		Scanner scan = new Scanner(System.in);
+		int index = 0;
+		while (true) {
+			System.out.println("inter an integer number");
+			int c = scan.nextInt();
+
+			if (c != 0) {
+				s.add(index, c);
+				index++;
+			} else {
+				int Max = 0;
+				for (int i = 0; i < s.size(); i++) {
+					if (Max > s.get(i)) {
+						continue;
+					} else {
+						Max = s.get(i);
+					}
+				}
+				System.out.println(Max);
+				break;
+			}
+		}
+
+		
+	}
+
+}

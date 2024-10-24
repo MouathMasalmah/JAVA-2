@@ -1,0 +1,11 @@
+package Activity3;
+
+public class Literary extends Tawjihi {
+	public Literary() {
+
+	}
+
+	public Literary(int seatingNum, int ID, String Name, char Gender, String School) {
+		super(seatingNum, ID, Name, Gender, School);
+	}
+}

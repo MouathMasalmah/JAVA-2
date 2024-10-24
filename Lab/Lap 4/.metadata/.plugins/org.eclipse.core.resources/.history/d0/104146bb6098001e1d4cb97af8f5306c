@@ -1,0 +1,8 @@
+package Activity3;
+
+public interface HumanBeing {
+	public char MALE = 'M' ,
+			FEMALE = 'F';
+	
+	
+}

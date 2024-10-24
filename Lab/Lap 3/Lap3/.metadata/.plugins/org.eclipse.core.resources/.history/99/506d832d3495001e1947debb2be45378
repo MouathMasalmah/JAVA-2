@@ -1,0 +1,19 @@
+package Activity3;
+
+public class Driver {
+    public static void main(String[] args) {
+    
+        Scientific scientific1 = new Scientific(1222, "Mohammad", 'M', "Ramallah");
+        Literary literal1 = new Literary(1222, "", 'G', "Bet lahem");
+        Subject subject1 = new Subject("Mandatory", "Eng",75);
+        Subject subject2 = new Subject("Elective", "Math",80);
+        scientific1.addSubject(subject1);
+        scientific1.addSubject(subject2);
+        Subject subject3 = new Subject("Math","Elective" , 90);
+        Subject subject4 = new Subject("Arabic","Elective" ,70 );
+        literal1.addSubject(subject4);
+        literal1.addSubject(subject3);
+        System.out.println(scientific1.calculateAverage());
+        System.out.println(literal1.calculateAverage());
+    }
+}

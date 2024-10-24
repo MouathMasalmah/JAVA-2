@@ -1,0 +1,11 @@
+package Activity3;
+
+public class Scientific extends Tawjihi {
+	public Scientific() {
+
+	}
+
+	public Scientific(int seatingNum, int ID, String Name, char Gender, String School) {
+		super(seatingNum, ID, Name, Gender, School);
+	}
+}

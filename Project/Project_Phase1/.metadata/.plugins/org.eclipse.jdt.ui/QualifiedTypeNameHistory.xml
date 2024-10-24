@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.annotation.Retention"/>
+    <fullyQualifiedTypeName name="javax.management.ObjectInstance"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Member"/>
+    <fullyQualifiedTypeName name="The_War_On_Gaza.Martyr"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.metal.MetalComboBoxUI.MetalComboBoxLayoutManager"/>
+    <fullyQualifiedTypeName name="java.util.ArrayDeque"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="The_War_On_Gaza.LivePerson"/>
+    <fullyQualifiedTypeName name="The_War_On_Gaza.Person"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="The_War_On_Gaza.Manager"/>
+    <fullyQualifiedTypeName name="The_War_On_Gaza.Family"/>
+</qualifiedTypeNameHistroy>

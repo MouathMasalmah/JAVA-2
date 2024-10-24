@@ -1,0 +1,10 @@
+
+public class Activity1 {
+
+	public static void main(String[] args) {
+		Time time = new Time(15, 50, 20);
+		System.out.println(time);
+
+	}
+
+}

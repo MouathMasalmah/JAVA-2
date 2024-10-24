@@ -1,0 +1,45 @@
+package Activity3;
+
+import java.util.ArrayList;
+
+public class Tawjihi extends Studens {
+	private int SeatingNum;
+	private int Year=2022;
+	private ArrayList<Subject> subjects =new ArrayList<>();
+	public Tawjihi() {
+		
+	}
+	public Tawjihi(int seatingNum, int year, ArrayList<Subject> subjects) {
+		super(ID,Name,Gender,School);
+		SeatingNum = seatingNum;
+		Year = year;
+		this.subjects = subjects;
+	}
+	public void addSubject() {
+		
+	}
+public Subject getSubject(String Title) {
+	return null;
+		
+	}
+public int getSeatingNum() {
+	return SeatingNum;
+}
+public void setSeatingNum(int seatingNum) {
+	SeatingNum = seatingNum;
+}
+public int getYear() {
+	return Year;
+}
+public void setYear(int year) {
+	Year = year;
+}
+public ArrayList<Subject> getSubjects() {
+	return subjects;
+}
+public void setSubjects(ArrayList<Subject> subjects) {
+	this.subjects = subjects;
+}
+
+
+}

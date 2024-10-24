@@ -1,0 +1,43 @@
+package Activity3;
+
+public class Studens {
+private int ID;
+private char Gender;
+private String Name;
+private String School;
+public Studens() {
+	
+}
+public Studens(int iD, char gender, String name, String school) {
+	super();
+	ID = iD;
+	Gender = gender;
+	Name = name;
+	School = school;
+}
+public int getID() {
+	return ID;
+}
+public void setID(int iD) {
+	ID = iD;
+}
+public char getGender() {
+	return Gender;
+}
+public void setGender(char gender) {
+	Gender = gender;
+}
+public String getName() {
+	return Name;
+}
+public void setName(String name) {
+	Name = name;
+}
+public String getSchool() {
+	return School;
+}
+public void setSchool(String school) {
+	School = school;
+}
+
+}

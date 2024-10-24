@@ -1,0 +1,13 @@
+
+public class Activity1 {
+
+	public static void main(String[] args) {
+		Time time = new Time(15, 47, 20);
+		System.out.println(time);
+
+		Time time1 = (Time) time.clone();
+		time1.setTimeInSecounds(15);
+		System.out.println(time);
+	}
+
+}

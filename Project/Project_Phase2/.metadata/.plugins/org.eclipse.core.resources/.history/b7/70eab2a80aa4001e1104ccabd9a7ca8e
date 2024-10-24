@@ -1,0 +1,30 @@
+package The_War_On_Gaza;
+
+public class CustomException extends Exception {
+	private String message = "";
+
+	public CustomException() {
+		// default message
+		message = "Invalid RADIUS. It must be a positive value";
+	}
+	public CustomException(Family Family) {
+		// default message
+
+		message = Family.getFamilyName() + " : The family is already registered!";
+		System.out.println(message);
+	}
+	public CustomException(String message) {
+		// default message
+		this.message = message;
+		System.out.println(message);
+	}
+	/*
+	 * public CustomException() { // user-defined message message = userMsg; }
+	 */
+	
+
+	@Override
+	public String getMessage() {
+		return message;
+	}
+}

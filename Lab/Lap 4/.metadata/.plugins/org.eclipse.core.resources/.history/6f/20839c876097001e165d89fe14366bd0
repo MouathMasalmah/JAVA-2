@@ -1,0 +1,31 @@
+import java.util.Date;
+
+public class Time {
+	private long time;
+
+	public Time(int hours, int minutes, int secounds) {
+		int sum = hours * 3600;
+		sum += minutes * 60;
+		sum += secounds;
+		time = sum;
+	}
+
+	public Time() {
+		Date date = new Date();
+		int sum = date.getHours() * 3600;
+		sum += date.getMinutes() * 60;
+		sum += date.getSeconds();
+		time = sum;
+
+	}
+
+	public long getTime() {
+		return time;
+	}
+
+	public void setTime(long time) {
+		this.time = time;
+	}
+	
+	
+}

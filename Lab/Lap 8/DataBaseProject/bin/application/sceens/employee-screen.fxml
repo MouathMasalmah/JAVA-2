@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="1241.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EmployeeController">
+   <children>
+      <Label layoutX="86.0" layoutY="30.0" prefHeight="42.0" prefWidth="203.0" text="Employee Screan">
+         <font>
+            <Font name="Bernhard Bold Condensed BT" size="34.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rbUpdate" layoutX="25.0" layoutY="577.0" mnemonicParsing="false" onAction="#selectUpdate" text="update Employee">
+         <font>
+            <Font name="Berylium Bold" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbAdd" layoutX="25.0" layoutY="517.0" mnemonicParsing="false" onAction="#selectAdd" text="add Employee">
+         <font>
+            <Font name="Berylium Bold" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbDelete" layoutX="25.0" layoutY="547.0" mnemonicParsing="false" onAction="#selectDelete" text="delete Employee">
+         <font>
+            <Font name="Berylium Bold" size="12.0" />
+         </font>
+      </RadioButton>
+      <TableView fx:id="tableView" cache="true" layoutX="385.0" layoutY="14.0" onKeyPressed="#searchByName" prefHeight="582.0" prefWidth="842.0">
+        <columns>
+          <TableColumn fx:id="tcId" prefWidth="75.0" style="-fx-text-fill: black;" text="ID" />
+          <TableColumn fx:id="tcName" minWidth="0.0" prefWidth="144.00006103515625" style="-fx-text-fill: black;" text="Name" />
+            <TableColumn fx:id="tcPhone" prefWidth="71.20001220703125" style="-fx-text-fill: black;" text="Phone" />
+            <TableColumn fx:id="tcAddress" prefWidth="84.79998779296875" style="-fx-text-fill: black;" text="Address" />
+            <TableColumn fx:id="tcEmail" prefWidth="144.7999267578125" style="-fx-text-fill: black;" text="Email" />
+            <TableColumn fx:id="tcGender" prefWidth="89.60003662109375" style="-fx-text-fill: black;" text="Gender" />
+            <TableColumn fx:id="tcType" prefWidth="79.199951171875" style="-fx-text-fill: black;" text="Type" />
+            <TableColumn fx:id="tcSalary" prefWidth="70.4000244140625" style="-fx-text-fill: black;" text="Salary" />
+            <TableColumn fx:id="tcPassword" prefWidth="78.800048828125" style="-fx-text-fill: black;" text="Password" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TableView>
+      <TextField fx:id="tfId" disable="true" layoutX="170.0" layoutY="100.0" />
+      <TextField fx:id="tfName" disable="true" layoutX="170.0" layoutY="132.0" promptText="Triple Name" />
+      <TextField fx:id="tfPhone" disable="true" layoutX="170.0" layoutY="164.0" promptText="9 digits number" />
+      <TextField fx:id="tfAddress" disable="true" layoutX="170.0" layoutY="196.0" promptText="Village, city or camp" />
+      <TextField fx:id="tfEmail" disable="true" layoutX="171.0" layoutY="228.0" promptText="someone@any.com" />
+      <Label layoutX="79.0" layoutY="104.0" text="Enter ID: " />
+      <Label layoutX="79.0" layoutY="136.0" text="Enter Name: " />
+      <Label layoutX="79.0" layoutY="168.0" text="Enter Phone: " />
+      <Label layoutX="79.0" layoutY="200.0" text="Enter Address: " />
+      <Label layoutX="79.0" layoutY="232.0" text="Enter Email: " />
+      <Button fx:id="butBack" layoutX="170.0" layoutY="626.0" mnemonicParsing="false" onAction="#BackButt" style="-fx-background-color: black;" text="Back" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" />
+      <Button fx:id="butShow" contentDisplay="CENTER" ellipsisString="" layoutX="245.0" layoutY="547.0" mnemonicParsing="false" onAction="#showButt" prefHeight="30.0" prefWidth="117.0" style="-fx-background-color: black;" text="Show Employee" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="Berylium" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="butDone" layoutX="170.0" layoutY="475.0" mnemonicParsing="false" onAction="#DoneBut" style="-fx-background-color: black;" text="Done" textFill="WHITE" />
+      <Label layoutX="79.0" layoutY="303.0" text="Choose Gender:" />
+      <RadioButton fx:id="rbMale" disable="true" layoutX="182.0" layoutY="303.0" mnemonicParsing="false" onAction="#selectMale" prefHeight="18.0" prefWidth="74.0" text="Male" />
+      <RadioButton fx:id="rbFemale" disable="true" layoutX="272.0" layoutY="303.0" mnemonicParsing="false" onAction="#selectFemale" prefHeight="18.0" prefWidth="90.0" text="Female" />
+      <Label layoutX="80.0" layoutY="335.0" text="Choose The Type:" />
+      <CheckBox fx:id="cbtype" disable="true" layoutX="25.0" layoutY="337.0" mnemonicParsing="false" onAction="#CheckType" prefHeight="18.0" prefWidth="17.0" />
+      <CheckBox fx:id="cbName" disable="true" layoutX="25.0" layoutY="136.0" mnemonicParsing="false" onAction="#cheakName" prefHeight="18.0" prefWidth="17.0" />
+      <CheckBox fx:id="cbPhone" disable="true" layoutX="25.0" layoutY="167.0" mnemonicParsing="false" onAction="#checkPhone" prefHeight="18.0" prefWidth="17.0" />
+      <CheckBox fx:id="cbAddress" disable="true" layoutX="25.0" layoutY="199.0" mnemonicParsing="false" onAction="#checkAddress" prefHeight="18.0" prefWidth="17.0" />
+      <CheckBox fx:id="cbEmail" disable="true" layoutX="25.0" layoutY="232.0" mnemonicParsing="false" onAction="#checkEmail" prefHeight="18.0" prefWidth="17.0" />
+      <CheckBox fx:id="cbGender" disable="true" layoutX="25.0" layoutY="302.0" mnemonicParsing="false" onAction="#checkGender" prefHeight="18.0" prefWidth="17.0" />
+      <TextField fx:id="tfSalary" disable="true" layoutX="171.0" layoutY="264.0" promptText="number" />
+      <Label layoutX="79.0" layoutY="268.0" text="Enter Salary:" />
+      <CheckBox fx:id="cbSalary" disable="true" layoutX="25.0" layoutY="268.0" mnemonicParsing="false" onAction="#checkSalary" prefHeight="18.0" prefWidth="17.0" />
+      <RadioButton fx:id="rbManager" disable="true" layoutX="192.0" layoutY="335.0" mnemonicParsing="false" onAction="#selectManager" prefHeight="18.0" prefWidth="74.0" text="Manager" />
+      <RadioButton fx:id="rbCasher" disable="true" layoutX="282.0" layoutY="335.0" mnemonicParsing="false" onAction="#selectCashire" prefHeight="18.0" prefWidth="90.0" text="Cashire" />
+      <TextField fx:id="tfPassword" disable="true" layoutX="172.0" layoutY="362.0" promptText="ex: sOme@124.s" />
+      <Label layoutX="80.0" layoutY="366.0" text="Enter Password:" />
+      <CheckBox fx:id="cbPassword" disable="true" layoutX="26.0" layoutY="366.0" mnemonicParsing="false" onAction="#checkPassword" prefHeight="18.0" prefWidth="17.0" />
+      <TextField fx:id="tfSearch" layoutX="172.0" layoutY="418.0" onAction="#searchByName" promptText="search" />
+
+      <Label layoutX="80.0" layoutY="422.0" text="Search By Name:" />
+      <RadioButton fx:id="rdMore" layoutX="467.0" layoutY="661.0" mnemonicParsing="false" onAction="#moreSalary" text="More Than" />
+      <RadioButton fx:id="rdEqual" layoutX="671.0" layoutY="661.0" mnemonicParsing="false" onAction="#equalSalary" text="Equal" />
+      <RadioButton fx:id="rdLess" layoutX="835.0" layoutY="661.0" mnemonicParsing="false" onAction="#lessSalary" text="Less Than" />
+      <TextField fx:id="tfCompare" layoutX="652.0" layoutY="614.0" />
+      <Text layoutX="555.0" layoutY="631.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter salary:" />
+      <TextField fx:id="tfTotal" editable="false" layoutX="1012.0" layoutY="614.0" />
+      <TextField fx:id="tfAvg" editable="false" layoutX="1012.0" layoutY="649.0" />
+      <Text layoutX="969.0" layoutY="631.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total:" />
+      <Text layoutX="972.0" layoutY="666.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Avg:" />
+   </children>
+</Pane>

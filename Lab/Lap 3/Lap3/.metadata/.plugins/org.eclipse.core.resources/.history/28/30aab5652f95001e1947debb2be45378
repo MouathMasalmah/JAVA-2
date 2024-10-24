@@ -1,0 +1,43 @@
+package Activity3;
+
+public class Subject {
+private String Title;
+private String Type;
+private int Mark;
+
+public Subject() {
+	
+}
+
+public Subject(String title, String type, int mark) {
+	super();
+	Title = title;
+	Type = type;
+	Mark = mark;
+}
+
+public String getTitle() {
+	return Title;
+}
+
+public void setTitle(String title) {
+	Title = title;
+}
+
+public String getType() {
+	return Type;
+}
+
+public void setType(String type) {
+	Type = type;
+}
+
+public int getMark() {
+	return Mark;
+}
+
+public void setMark(int mark) {
+	Mark = mark;
+}
+
+}

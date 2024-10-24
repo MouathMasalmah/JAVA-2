@@ -1,0 +1,5 @@
+package The_War_On_Gaza;
+
+public interface Sortable {
+
+}
